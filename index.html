@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Foodies Point
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("form").submit(function(){
+				alert("Successfully Checked Out!");
+			});
+		});
+
+		$(function() {
+  			setTimeout(hideSplash, 2200);
+		});
+
+		function hideSplash() {
+  			$.mobile.changePage("#home", "fade");
+		}	
+	</script>
+</head>
+<body>
+	<div id="splash" data-role="page" data-theme="b" style="background-color: #000000;"> 
+   		<div class="splash">
+   			<pre>
+
+
+
+
+
+
+   			</pre>
+       		<img src="img/theLogo.jpg" alt="splash" width="100%" height="100%" />
+   		</div>
+	</div>
+	</div>
+	<div id="home" data-role="page">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1 style="font-family:'Helvetica Neue',sans-serif; font-weight:bold; letter-spacing: -1px; line-height: 1; font-size: 20px"> Foodies Point </h1>
+		</div>
+		<div role="main" class="ui-content">
+			<h1> Menu </h1>
+			<ul data-role="listview" data-inset="true" data-filter="true" data-theme="c" autofocus>
+				<li> <a href="#alooTikki" data-transition="pop"> Aloo Tikki </a></li>
+				<li> <a href="#dosa" data-transition="pop"> Dosa </a></li>
+				<li> <a href="#poha" data-transition="pop"> Poha </a></li>
+				<li> <a href="#pavBhaji" data-transition="pop"> Pav-Bhaji</a></li>
+				<li> <a href="#samosa" data-transition="pop"> Samosa</a></li>
+				<li> <a href="#idli" data-transition="pop"> Idli</a></li>				
+				<li> <a href="#kachori" data-transition="pop"> Kachori</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h2> Copyright&copy; 2017-2018 Foodies Point Pvt Ltd</h2>
+		</div>
+	</div>
+	
+	<div id="alooTikki" data-role="page">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext">Back</a>
+			<h1 style="font-family:'Helvetica Neue',sans-serif; font-weight:bold; letter-spacing: -1px; line-height: 1; font-size: 20px"> Foodies Point </h1>
+		</div>
+		<img src="img/AlooTikki.jpg" style="width: 100%; height: auto;">
+		<center>
+			<h4> Aloo-Tikki cooked by the best bawarchi in Phagwara. </h4>
+			<h5> Price : 20 </h5>
+		</center>
+		<ul data-role="listview" data-inset="true">
+			<li> <a href="#pay" data-transition="slide" data-theme="c" style="text-align: center;"> Purchase </a></li>
+		</ul>
+		<div data-role="footer" data-position="fixed">
+			<h2> Copyright&copy; 2017-2018 Foodies Point Pvt Ltd</h2>
+		</div>
+	</div>
+	
+	<div id="dosa" data-role="page">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext">Back</a>
+			<h1 style="font-family:'Helvetica Neue',sans-serif; font-weight:bold; letter-spacing: -1px; line-height: 1; font-size: 20px"> Foodies Point </h1>
+		</div>
+		<center>
+			<img src="img/dosa1.jpg" style="width: 100%; height: auto;">
+			<h4> A Delicious Dosa with Potato stuffed into it </h4>
+			<h5> Price : 40 </h5>
+		</center>
+		<ul data-role="listview" data-inset="true">
+			<li> <a href="#pay" data-transition="slide" data-theme="c" style="text-align: center;"> Purchase </a></li>
+		</ul>
+		<div data-role="footer" data-position="fixed">
+			<h2> Copyright&copy; 2017-2018 Foodies Point Pvt Ltd</h2>
+		</div>
+	</div>
+
+	<div id="poha" data-role="page">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext">Back</a>
+			<h1 style="font-family:'Helvetica Neue',sans-serif; font-weight:bold; letter-spacing: -1px; line-height: 1; font-size: 20px"> Foodies Point </h1>
+		</div>
+		<img src="img/poha.jpg" style="width: 100%; height: auto;">
+		<center>
+			<h4> Poha a delicious and a popular Maharashtrian dish, served with Coriander and Sev. </h4>
+			<h5> Price : 10 </h5>
+		</center>
+		<ul data-role="listview" data-inset="true">
+			<li> <a href="#pay" data-transition="slide" style="text-align: center;"> Purchase </a></li>
+		</ul>
+		<div data-role="footer" data-position="fixed">
+			<h2> Copyright&copy; 2017-2018 Foodies Point Pvt Ltd</h2>
+		</div>
+	</div>
+
+	<div id="idli" data-role="page">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext">Back</a>
+			<h1 style="font-family:'Helvetica Neue',sans-serif; font-weight:bold; letter-spacing: -1px; line-height: 1; font-size: 20px"> Foodies Point </h1>
+		</div>
+			<img src="img/idli.jpeg" style="width: 100%; height: auto;">
+			<center>
+				<h4> A Delicious Idli in complementary with Chutney and  Sambhar</h4>
+				<h5> Price : 20 </h5>
+			</center>
+		<ul data-role="listview" data-inset="true">
+			<li> <a href="#pay" data-transition="slide" style="text-align: center;"> Purchase </a></li>
+		</ul>
+		<div data-role="footer" data-position="fixed">
+			<h2> Copyright&copy; 2017-2018 Foodies Point Pvt Ltd</h2>
+		</div>
+	</div>
+
+	
+
+	<div id="pavBhaji" data-role="page">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext">Back</a>
+			<h1 style="font-family:'Helvetica Neue',sans-serif; font-weight:bold; letter-spacing: -1px; line-height: 1; font-size: 20px"> Foodies Point </h1>
+		</div>
+		<img src="img/PavBhaji.jpg" style="width: 100%; height: auto;">
+		<center>
+			<h4> Delicious Pav Bhaji served with thick vegetable curry and roasted bread. </h4>
+			<h5> Price : 30 </h5>
+		</center>
+		<ul data-role="listview" data-inset="true">
+			<li> <a href="#pay" data-transition="slide" style="text-align: center;"> Purchase </a></li>
+		</ul>
+		<div data-role="footer" data-position="fixed">
+			<h2> Copyright&copy; 2017-2018 Foodies Point Pvt Ltd</h2>
+		</div>
+	</div>
+
+	<div id="samosa" data-role="page">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext">Back</a>
+			<h1 style="font-family:'Helvetica Neue',sans-serif; font-weight:bold; letter-spacing: -1px; line-height: 1; font-size: 20px"> Foodies Point </h1>
+		</div>
+		<img src="img/Samosaa.jpg" style="width: 100%; height: auto;">
+		<center>
+			<h4> A mouth watering crispy and spicy fried dish stuffed with boiled meshed potatoes. </h4>
+			<h5> Price : 5 </h5>
+		</center>
+		<ul data-role="listview" data-inset="true">
+			<li> <a href="#pay" data-transition="slide" style="text-align: center;"> Purchase </a></li>
+		</ul>
+		<div data-role="footer" data-position="fixed">
+			<h2> Copyright&copy; 2017-2018 Foodies Point Pvt Ltd</h2>
+		</div>
+	</div>
+
+	<div id="kachori" data-role="page">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext">Back</a>
+			<h1 style="font-family:'Helvetica Neue',sans-serif; font-weight:bold; letter-spacing: -1px; line-height: 1; font-size: 20px"> Foodies Point </h1>
+		</div>
+		<img src="img/Kachori.jpg" style="width: 100%; height: auto;"/>
+		<center>
+			<h4> Breakfast's top priority the tasty Kachori </h4>
+			<h5> Price : 10 </h5>
+		</center>
+		<ul data-role="listview" data-inset="true">
+			<li> <a href="#pay" data-transition="slide" style="text-align: center;"> Purchase </a></li>
+		</ul>
+		<div data-role="footer" data-position="fixed">
+			<h2> Copyright&copy; 2017-2018 Foodies Point Pvt Ltd</h2>
+		</div>
+	</div>
+
+	<div id="pay" data-role="page">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext">Back</a>
+			<h1 style="font-family:'Helvetica Neue',sans-serif; font-weight:bold; letter-spacing: -1px; line-height: 1; font-size: 20px"> Foodies Point </h1>
+		</div>
+		<div data-role="content">
+			<div class="content-primary">
+				<form action="alas();" method="post" class="ui-body ui-body-a ui-corner-all">
+					<fieldset>
+						<div data-role="fieldcontain">
+							<label for="Item"> Item Name </label>
+							<input type="text" name="item" placeholder="Item Name" required />
+						</div>
+					</fieldset>
+					<fieldset>
+						<div data-role="fieldcontain">
+							<label for="textarea"> Address</label>
+							<textarea cols="40" rows="8" name="address" id="address" required> </textarea>
+						</div>
+					</fieldset>
+					<fieldset>
+						<div data-role="fieldcontain">
+							<label for="number-pattern">Amount:</label>
+							<input type="number" required name="number" pattern="[0-9]*" placeholder="10" id="number-pattern" value="">
+						</div>
+					</fieldset>
+					<fieldset>
+						<div data-role="fieldcontain">
+							<label for="shipping" class="select">Shipping method:</label>
+							<select name="shipping" id="shipping">
+								<option value="Standard shipping">Standard: Overnight</option>
+								<option value="Rush shipping">Rush: Next 5 Hours</option>
+								<option value="Express shipping">Express: Within 3 Hours</option>
+								<option value="Super Fast shipping">Within an Hour</option>
+							</select>
+						</div>
+					</fieldset>
+					<fieldset>
+						<div data-role="fieldcontain">
+							<!-- <input type="Submit" value="Submit"> -->
+							<a href="#checkOut" data-rel="dialog"> Submit </a>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h2> Copyright&copy; 2017-2018 Foodies Point Pvt Ltd</h2>
+		</div>
+	</div>
+	<div id="checkOut" data-role="page">
+		<div data-role="content">
+			<h2> Successfully Checked Out!</h2>
+			<h3> The item has been dispatched </h3>
+		</div>
+	</div>
+</body>
+</html>
